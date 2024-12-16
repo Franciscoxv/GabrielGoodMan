@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambié a "es" porque el contenido está en español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel GoodMan</title>
+    <link rel="stylesheet" href="/CSS/Styles.css"> <!-- Ruta a tu archivo CSS -->
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header class="Titulo">
+        <h1>Gabriel <span>Good</span>Man</h1>
+    </header>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="Historial.html">Historial de clientes</a>
+        <a href="Acerca.html">Acerca</a> 
+      </div>
+
+    <section class="Imagen">
+        <img src="Imagenes/gabrielgoodman.webp" alt="imagen del abogado" title="El del derecho">
+        <div class="text-box">Cordiales bienvenidas, esta es mi pagina web, podran encontrar mis contactos y mas informacion acerca de mi sin embargo puedo asegurar que esta sera una experiencia tribunal digna de recordar, nada mas que decir.</div>
+    </section>
+
+    <!-- Filosofía de negocios -->
+    <section class="Filosofia">
+        <h2>Filosofía de negocios:</h2>
+        <blockquote>
+            <p>¿Mi mayor miedo, silla eléctrica? No, su señoría. Mi mayor miedo es un examen de próstata y encontrarlo agradable a mi gusto.</p>
+        </blockquote>
+        <h3>¿Estás al borde del fraude fiscal o cadena perpetua?</h3>
+        <p>No te preocupes, aquí está el mejor abogado de <span>peruyork</span></p>
+        <img src="Imagenes/peruyork.webp" alt="imagen de Perú">
+    </section>
+
+    <!-- Servicios ofrecidos -->
+    <section class="Filosofia">
+        <h2>Servicios que ofrezco:</h2>
+    </section>
+
+        <!-- Card -->
+        <section class="Card">
+
+            <ul> <!-- Cambié de <div> a <ul> porque es una lista -->
+                <li>Problemas legales</li>
+                <li>Acusaciones falsas</li>
+                <li>Demandas justificadas</li>
+                <li>Claro delito</li>
+                <li>Asesinato o violación</li>
+                <li>Cambio del tanque del gas</li>
+                <li>Robo a mano armada</li>
+            </ul>
+        </section>
+
+    <!-- Solicitud de contacto -->
+<section>
+    <h2>Puedes mandarnos una solicitud con el siguiente formulario</h2>
+    <form action="#" method="POST">
+        <!-- Primer nombre -->
+        <label for="primerNombre">Primer Nombre</label>
+        <input type="text" id="primerNombre" name="primerNombre" required placeholder="Ingresa tu primer nombre">
+
+        <!-- Apellido -->
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tu apellido">
+
+        <!-- Lugar de residencia -->
+        <label for="residencia">Lugar de Residencia</label>
+        <select id="residencia" name="residencia" required>
+            <option value="" disabled selected>Selecciona tu país de residencia</option>
+            <option value="Peru">Perú</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Otro">Otro</option>
+        </select>
+
+        <!-- Caja de solicitud -->
+        <label for="solicitud">Descripción del problema</label>
+        <textarea id="solicitud" name="solicitud" required placeholder="Describe tu problema o solicitud aquí..." minlength="20"></textarea>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar solicitud">
+    </form>
+</section>
+
+    <!-- Redes sociales -->
+    <section>
+        <h2>Encuéntrame en mis redes:</h2>
+         <!-- Agrupé los enlaces en una lista -->
+            <a class="Boton" title="Enlace a YouTube" href="https://youtu.be/JijKrdyDH2I" target="_blank">YouTube</a></li>
+            <a class="Boton" title="Enlace a Xvideos" href="https://x.com/Gall_Kemal" target="_blank">Twitter</a></li>
+            <a class="Boton" title="Enlace a Red judicial" href="https://i.pinimg.com/736x/91/7a/2e/917a2e674ca144e30fb20c03585f7d96.jpg" target="_blank">Enlace judicial</a></li>
+        
+    </section>
+
+    <!-- Contacto -->
+    <footer>
+        <h4>Puedes contactarme por medio de mi correo electrónico:</h4>
+        <p><a href="mailto:eldelgas@gmail.com">eldelgas@gmail.com</a></p>
+        <p>© 2024 Franciscov. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

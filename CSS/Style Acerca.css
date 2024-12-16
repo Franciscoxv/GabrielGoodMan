@@ -1,0 +1,187 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(241, 239, 230);
+    color: rgb(53, 42, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #4d3d30;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f1ede6;
+    text-align: center;
+    padding: 15px 90px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #c9bfaa;
+    color: rgb(73, 51, 33);
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #9b876d;
+    color: rgb(252, 248, 239);
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+/* Header Section */
+.Titulo {
+    color: rgb(136, 108, 77);
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(190, 180, 166);
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Good de otro color */
+span {
+    color: rgb(235, 216, 193);
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+ul {
+    list-style: none; /* Quita los puntos */
+    padding: 0;       /* Opcional: elimina el espaciado interno por defecto */
+    margin: 0;        /* Opcional: elimina el margen por defecto */
+}
+
+/* Typography */
+h2 {
+    font-size: 2rem;
+    color: rgb(167, 132, 86);
+    margin-bottom: 20px;
+}
+
+h2, h3, h4, h5 {
+    color: rgb(167, 132, 86);
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    font-weight: 700;
+    color: rgb(90, 67, 40);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+li {
+    font-size: 1rem;
+    color: rgb(180, 143, 95);
+    margin: 5px 0;
+}
+
+/* Links */
+a {
+    color: rgb(134, 117, 77);
+    font-weight: 900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(180, 143, 95);
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(167, 132, 86);
+}
+
+/* General container for the columns */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Space between columns */
+    padding: 16px;
+}
+
+/* Individual columns */
+.column {
+    flex: 1 1 300px; /* Flexible, minimum 300px width */
+    max-width: 400px; /* Ensures columns don’t stretch too wide */
+    padding: 16px;
+    background-color: #fdfdfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for columns */
+.column:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+/* Title inside each column */
+.title {
+    font-size: 20px;
+    color: #726657;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Button styles */
+.button {
+    display: block;
+    margin: 0px 30px;
+    padding: 10px 20px;
+    background-color: #3f3125;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease-in, padding 0.3s ease;
+}
+
+.card img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(97, 64, 26, 0.2);
+}
+
+.button:hover {
+    color: rgb(83, 66, 50);
+    background-color: #b19887;
+    padding: 10px 40px;
+    transition: background-color 0.5s ease, color 0.5s ease-in, padding 0.5s ease;
+}
+
+/* Clear floats for older browsers (if necessary) */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}

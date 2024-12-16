@@ -1,0 +1,351 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(241, 239, 230);
+    color: rgb(53, 42, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #4d3d30;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f1ede6;
+    text-align: center;
+    padding: 15px 90px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #c9bfaa;
+    color: rgb(73, 51, 33);
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #9b876d;
+    color: rgb(252, 248, 239);
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+/* Header Section */
+.Titulo {
+    color: rgb(136, 108, 77);
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(190, 180, 166);
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Good de otro color */
+span {
+    color: rgb(235, 216, 193);
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+/* Contenedor de la Imagen */
+.Imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necesario para posicionar el texto */
+    margin: 20px 0;
+    padding: 25px 0 0 0;
+}
+
+/* Estilo de la imagen */
+.Imagen img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Suaviza el zoom al pasar el ratón */
+}
+
+/* Zoom de la imagen al pasar el ratón */
+.Imagen:hover img {
+    transform: scale(1.1); /* Zoom de la imagen */
+}
+
+/* Cuadro de texto */
+.Imagen .text-box {
+    position: absolute;
+    top: 50%;
+    left: 110%; /* Posiciona el cuadro al costado derecho */
+    transform: translateY(-50%);
+    background-color: rgba(70, 51, 34, 0.8); /* Fondo oscuro translúcido */
+    color: white;
+    padding: 15px 20px; /* Más espacio interno para el texto */
+    border-radius: 8px;
+    opacity: 0; /* Oculto inicialmente */
+    pointer-events: none; /* No interactuable */
+    text-align: left; /* Alineación normal del texto */
+    width: 250px; /* Define un ancho más amplio */
+    max-width: 300px; /* Limita el ancho máximo */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    line-height: 1.5; /* Mejora el espaciado entre líneas */
+    white-space: normal; /* Permite que el texto envuelva si es largo */
+}
+
+/* Mostrar el cuadro al pasar el ratón */
+.Imagen:hover .text-box {
+    opacity: 1; /* Se hace visible */
+    transform: translateY(-50%) translateX(0); /* Aparece suavemente */
+}
+
+
+.Filosofia{
+    text-align: center;
+    padding: 70px 0 5px 0;
+}
+
+.Filosofia img {
+    width: 900px;
+    max-width: 960px;
+    height: 390px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none; /* Quita los puntos */
+    padding: 0;       /* Opcional: elimina el espaciado interno por defecto */
+    margin: 0;        /* Opcional: elimina el margen por defecto */
+}
+
+/* Card Styles */
+.Card { 
+    background-color: rgb(216, 206, 191);
+    border: 1px solid rgb(165, 140, 107);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Typography */
+h2 {
+    font-size: 2rem;
+    color: rgb(167, 132, 86);
+    margin-bottom: 20px;
+}
+
+h2, h3, h4, h5 {
+    color: rgb(167, 132, 86);
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    font-weight: 700;
+    color: rgb(53, 42, 29);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+li {
+    font-size: 1rem;
+    color: rgb(100, 78, 48);
+    margin: 5px 0;
+}
+
+/* Links */
+a {
+    color: rgb(134, 117, 77);
+    font-weight: 900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(180, 143, 95);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    
+}
+
+form input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(165, 140, 107);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"] {
+    background-color: #b69c7e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #856754;
+    color: rgb(83, 66, 50);
+}
+
+form input[type="text"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #50402a;
+    outline: none;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+    color: #3a3427;
+}
+
+form textarea {
+    height: 120px;
+    width: 500px;
+    resize: vertical;
+}
+
+/* General container for the columns */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Space between columns */
+    padding: 16px;
+}
+
+/* Individual columns */
+.column {
+    flex: 1 1 300px; /* Flexible, minimum 300px width */
+    max-width: 400px; /* Ensures columns don’t stretch too wide */
+    padding: 16px;
+    background-color: #fdfdfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for columns */
+.column:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+/* Title inside each column */
+.title {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Button styles */
+.button {
+    display: block;
+    margin: 0px 30px;
+    padding: 10px 20px;
+    background-color: #3f3125;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease-in, padding 0.3s ease;
+}
+
+.card img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(97, 64, 26, 0.2);
+}
+
+.button:hover {
+    color: rgb(83, 66, 50);
+    background-color: #b19887;
+    padding: 10px 40px;
+    transition: background-color 0.5s ease, color 0.5s ease-in, padding 0.5s ease;
+}
+
+/* Clear floats for older browsers (if necessary) */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Boton {
+    background-color: #b69c7e;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transform: color 0.5 ease;
+    transition: background-color 0.5s ease, color 0.5s ease-in, padding 0.5s ease;
+  }
+
+  .Boton:hover {
+    color: rgb(83, 66, 50);
+    background-color: #856754;
+    padding: 10px 40px;
+    transition: background-color 0.5s ease, color 0.5s ease-in, padding 0.5s ease;
+}
